@@ -1,7 +1,7 @@
-var grunt = require('grunt');
-var compiler = require('hashspace').compiler;
+module.exports = function(grunt) {
+  'use strict';
 
-grunt.registerMultiTask('compile', function () {
+  var compiler = require('hashspace').compiler;
 
   function compileErrMsg(fileName, compileErr) {
     return 'HSP compilation error in ' + fileName + ' ('+compileErr.line+','+compileErr.column+'): ' + compileErr.description;
@@ -32,4 +32,4 @@ grunt.registerMultiTask('compile', function () {
     });
 
   });
-});
+};
