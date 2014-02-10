@@ -1,0 +1,15 @@
+{
+  "name": "grunt-hsp-compiler",
+  "version": "0.0.1",
+  "description": "Grunt integration for the hashspace compiler",
+  "main": "index.js",
+  "dependencies": {
+    "hashspace": "git://github.com/ariatemplates/hashspace.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0"
+  }
+}
