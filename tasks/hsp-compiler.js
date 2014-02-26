@@ -21,7 +21,7 @@ module.exports = function(grunt) {
 
       // compile valid paths
       src.forEach(function (tplFileName) {
-        var compileResult = compiler.compile(grunt.file.read(tplFileName));
+        var compileResult = compiler.compile(grunt.file.read(tplFileName), tplFileName);
 
         //TODO: this check won't be needed as soon as https://github.com/ariatemplates/hashspace/issues/61 is fixed
         if (compileResult.errors.length === 0) {
