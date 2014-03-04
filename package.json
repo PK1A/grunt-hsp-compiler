@@ -4,7 +4,7 @@
   "description": "Grunt integration for the hashspace compiler",
   "main": "index.js",
   "dependencies": {
-    "hashspace": "git://github.com/ariatemplates/hashspace.git"
+    "hashspace": "*"
   },
   "devDependencies": {
     "grunt": "~0.4.0"
